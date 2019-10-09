@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardimationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-fl-H20">
+                                <rect key="frame" x="0.0" y="44" width="414" height="399"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abV-bU-J3O">
+                                <rect key="frame" x="0.0" y="453" width="414" height="10"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="aKC-GQ-hvs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oAc-cx-f9q">
+                                <rect key="frame" x="0.0" y="463" width="414" height="399"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Cyo-zR-aAU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zb5-vK-a66"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oAc-cx-f9q" secondAttribute="bottom" id="42N-Bz-s20"/>
+                            <constraint firstItem="abV-bU-J3O" firstAttribute="top" secondItem="BlG-fl-H20" secondAttribute="bottom" constant="10" id="4Pd-Gq-Jyb"/>
+                            <constraint firstItem="BlG-fl-H20" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="69e-5p-OIO"/>
+                            <constraint firstItem="abV-bU-J3O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8O5-TN-zak"/>
+                            <constraint firstItem="oAc-cx-f9q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hos-I4-afG"/>
+                            <constraint firstItem="oAc-cx-f9q" firstAttribute="top" secondItem="abV-bU-J3O" secondAttribute="bottom" id="IhY-z8-7RV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abV-bU-J3O" secondAttribute="trailing" id="JWl-E3-A0x"/>
+                            <constraint firstAttribute="trailing" secondItem="BlG-fl-H20" secondAttribute="trailing" id="MbH-s0-f0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oAc-cx-f9q" secondAttribute="trailing" id="TEU-0n-Ddp"/>
+                            <constraint firstItem="BlG-fl-H20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W4L-ho-XWj"/>
+                            <constraint firstItem="oAc-cx-f9q" firstAttribute="height" secondItem="BlG-fl-H20" secondAttribute="height" id="YXS-cB-nvr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="BlG-fl-H20" id="mtF-OF-56I"/>
+                        <outlet property="table" destination="oAc-cx-f9q" id="x6A-hj-RK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+</document>
