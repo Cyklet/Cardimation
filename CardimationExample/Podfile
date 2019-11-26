@@ -1,0 +1,8 @@
+platform :ios, '12.0'
+
+target 'CardimationExample' do
+  use_frameworks!
+
+  pod 'Cardimation', :git => 'https://github.com/Cyklet/Cardimation.git', :tag => '0.0.1'
+
+end

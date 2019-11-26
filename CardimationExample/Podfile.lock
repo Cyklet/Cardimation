@@ -1,0 +1,22 @@
+PODS:
+  - Cardimation (0.0.1)
+
+DEPENDENCIES:
+  - Cardimation (from `https://github.com/Cyklet/Cardimation.git`, tag `0.0.1`)
+
+EXTERNAL SOURCES:
+  Cardimation:
+    :git: https://github.com/Cyklet/Cardimation.git
+    :tag: 0.0.1
+
+CHECKOUT OPTIONS:
+  Cardimation:
+    :git: https://github.com/Cyklet/Cardimation.git
+    :tag: 0.0.1
+
+SPEC CHECKSUMS:
+  Cardimation: 0d9a101482d55fdb547040c0e618a9f61d9a5889
+
+PODFILE CHECKSUM: 2d709aaf975d98a0d4bd3e7ab40f129eb2f1a4db
+
+COCOAPODS: 1.8.3

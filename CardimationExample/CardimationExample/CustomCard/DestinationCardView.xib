@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DestinationCardView" customModule="CardimationExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="402"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-pt-WXp">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="402"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-7D-uhF">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="402"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-Na-TtC">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="402"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRU-fg-w2R">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="402"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19836597711267606" colorSpace="custom" customColorSpace="displayP3"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can visit the" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Dgv-Cc-cp2">
+                                    <rect key="frame" x="10" y="321.5" width="306" height="20"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eiffel tower" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-da-awm">
+                                    <rect key="frame" x="10" y="351.5" width="306" height="30.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="26"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="zpt-Na-TtC" firstAttribute="top" secondItem="4L8-7D-uhF" secondAttribute="top" id="Ckw-JP-Ehv"/>
+                                <constraint firstItem="iPc-da-awm" firstAttribute="top" secondItem="Dgv-Cc-cp2" secondAttribute="bottom" constant="10" id="IIi-cW-14h"/>
+                                <constraint firstAttribute="trailing" secondItem="xRU-fg-w2R" secondAttribute="trailing" id="Qnb-su-BEp"/>
+                                <constraint firstItem="zpt-Na-TtC" firstAttribute="leading" secondItem="4L8-7D-uhF" secondAttribute="leading" id="SJH-xi-HhR"/>
+                                <constraint firstAttribute="bottom" secondItem="xRU-fg-w2R" secondAttribute="bottom" id="Tjf-9A-4Kn"/>
+                                <constraint firstItem="xRU-fg-w2R" firstAttribute="top" secondItem="4L8-7D-uhF" secondAttribute="top" id="VhR-ZT-FKe"/>
+                                <constraint firstAttribute="trailing" secondItem="Dgv-Cc-cp2" secondAttribute="trailing" constant="10" id="Vy1-Vz-IT0"/>
+                                <constraint firstItem="Dgv-Cc-cp2" firstAttribute="leading" secondItem="4L8-7D-uhF" secondAttribute="leading" constant="10" id="d4a-6V-TWx"/>
+                                <constraint firstAttribute="bottom" secondItem="iPc-da-awm" secondAttribute="bottom" constant="20" id="iMK-hh-sLF"/>
+                                <constraint firstAttribute="trailing" secondItem="zpt-Na-TtC" secondAttribute="trailing" id="lrX-DB-enw"/>
+                                <constraint firstItem="xRU-fg-w2R" firstAttribute="leading" secondItem="4L8-7D-uhF" secondAttribute="leading" id="mMy-2m-T5m"/>
+                                <constraint firstItem="iPc-da-awm" firstAttribute="leading" secondItem="4L8-7D-uhF" secondAttribute="leading" constant="10" id="tdu-sZ-xsj"/>
+                                <constraint firstItem="Dgv-Cc-cp2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4L8-7D-uhF" secondAttribute="top" constant="20" id="x99-6C-5RR"/>
+                                <constraint firstAttribute="bottom" secondItem="zpt-Na-TtC" secondAttribute="bottom" id="xze-LU-jmx"/>
+                                <constraint firstAttribute="trailing" secondItem="iPc-da-awm" secondAttribute="trailing" constant="10" id="yOD-pE-6g4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4L8-7D-uhF" firstAttribute="top" secondItem="tZc-pt-WXp" secondAttribute="top" id="Byt-lc-imf"/>
+                        <constraint firstAttribute="trailing" secondItem="4L8-7D-uhF" secondAttribute="trailing" id="Mfl-Jv-OnC"/>
+                        <constraint firstAttribute="bottom" secondItem="4L8-7D-uhF" secondAttribute="bottom" id="Zzb-2l-ckR"/>
+                        <constraint firstItem="4L8-7D-uhF" firstAttribute="leading" secondItem="tZc-pt-WXp" secondAttribute="leading" id="byT-uM-Nb7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tZc-pt-WXp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Jr-wc-rRi"/>
+                <constraint firstAttribute="bottom" secondItem="tZc-pt-WXp" secondAttribute="bottom" id="VUF-hV-Rx1"/>
+                <constraint firstItem="tZc-pt-WXp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qDD-c2-ap4"/>
+                <constraint firstAttribute="trailing" secondItem="tZc-pt-WXp" secondAttribute="trailing" id="zrg-c8-yOw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardImageView" destination="zpt-Na-TtC" id="OSa-sE-AOe"/>
+                <outlet property="imageComponentsView" destination="4L8-7D-uhF" id="drV-Zd-SGX"/>
+                <outlet property="mainTextLabel" destination="iPc-da-awm" id="J2y-9B-4Do"/>
+                <outlet property="picturesView" destination="tZc-pt-WXp" id="vrh-rI-3ea"/>
+                <outlet property="subTextLabel" destination="Dgv-Cc-cp2" id="r0E-W0-mKg"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="-36"/>
+        </view>
+    </objects>
+</document>
